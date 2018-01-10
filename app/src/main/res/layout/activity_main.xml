@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contenido a escribir:"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/lblContenido"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtContenido"
+        android:layout_below="@+id/lblContenido"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAddInterno"
+        android:layout_below="@id/txtContenido"
+        android:layout_marginLeft="20dp"
+        android:text="Añadir Fich. Int."/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAddExterno"
+        android:text="Añadir Fich. Ext."
+        android:layout_below="@id/txtContenido"
+        android:layout_toRightOf="@id/btnAddInterno"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLeeInt"
+        android:layout_below="@id/btnAddInterno"
+        android:layout_marginLeft="20dp"
+        android:text="Leer Fich.\n Int."/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLeeExt"
+        android:layout_below="@id/btnAddExterno"
+        android:layout_toRightOf="@id/btnLeeInt"
+        android:text="Leer Fich.\n Ext."/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLeeRecurso"
+        android:layout_below="@+id/btnAddExterno"
+        android:layout_toRightOf="@id/btnLeeExt"
+        android:text="Leer \n recurso"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDelInt"
+        android:layout_below="@id/btnLeeInt"
+        android:layout_marginLeft="20dp"
+        android:text="Borrar Fich. Int."/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDelExt"
+        android:layout_below="@id/btnLeeRecurso"
+        android:layout_toRightOf="@id/btnDelInt"
+        android:text="Borrar Fich. Ext."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblSalida"
+        android:text="El contenido del fichero es:"
+        android:layout_below="@id/btnDelInt"
+        android:layout_marginLeft="20dp"/>
+
+</RelativeLayout>
